@@ -1,0 +1,17 @@
+--- exe1.4.cpp	2017-03-29 22:03:42.213469353 +0800
++++ exe1.5.cpp	2017-03-29 22:06:59.997473796 +0800
+@@ -5,7 +5,12 @@
+ 	int v1 = 0;
+ 	int v2 = 0;
+ 	std::cin >> v1 >> v2;
+-	std::cout << "The product of " << v1 << "x" << v2 << " is "
+-		  << v1*v2 << std::endl;
++	std::cout << "The product of ";
++	std::cout << v1;
++	std::cout << "x";
++	std::cout << v2 ;
++	std::cout << " is ";
++	std::cout << v1*v2 ;
++	std::cout << std::endl;
+ 	return 0; 
+ }
