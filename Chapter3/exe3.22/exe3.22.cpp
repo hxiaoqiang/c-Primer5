@@ -18,7 +18,12 @@ int main()
 		cout << str_vec[i];
 	cout << endl;
 	cout << "output: "<< endl; 
-	for(auto it = str_vec.cbegin();it != str_vec.cend() && !it->empty(); ++it)
+	for (auto it = str_vec.begin(); it != str_vec.end() && !it->empty(); ++it)
+	{
+		for (auto s_it = (*it).begin(); s_it != (*it).end(); ++s_it)
+			*s_it = toupper(*s_it);	
 		cout << *it << endl;
+	}
+	getchar();
 	return 0;
 }
