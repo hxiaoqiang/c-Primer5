@@ -12,7 +12,7 @@ int main()
 	vector<int> ivec;
 	while(cin >> tmp)
 		ivec.push_back(tmp);
-	for(decltype(ivec.size())i = 0;i < ivec.size() - 1;i = i+2)
+	for(decltype(ivec.size())i = 0;i != ivec.size() - 1;i = i+2)
 		cout << "i " << i <<" "<< ivec[i] + ivec[i+1] << endl;
 	
 	return 0;
